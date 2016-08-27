@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: #dab368;
+    font-family: "RobotoLight",Tahoma,Arial,sans-serif;
+}
+
+/* Start Roboto Fonts */
+
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../assets/Robotofonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../assets/Robotofonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../assets/Robotofonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../assets/Robotofonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../assets/Robotofonts/RobotoLight/RobotoLight.eot");
+    src: url("../assets/Robotofonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../assets/Robotofonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../assets/Robotofonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../assets/Robotofonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../assets/Robotofonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../assets/Robotofonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../assets/Robotofonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../assets/Robotofonts/RobotoBold/RobotoBold.eot");
+    src: url("../assets/Robotofonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../assets/Robotofonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../assets/Robotofonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* End Roboto Fonts */
+
+input,textarea,select,button,a,span {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    font-family: $fontFamily;
+    font-weight: 400;
+}
+.field input, .field textarea, .field select {
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    border-radius: 0px;
+    height: 45px;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.field input:focus, .field textarea:focus, .field select:focus {
+    border: 1px solid #dab368;
+}
+.btn {
+    height: 45px;
+    padding: 0px 27px;
+    border: 0px;
+    border-radius: 0px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.brownBtn {
+    background-color: #dab368;
+}
+.formTitle {
+    text-align: center;
+}
+.centerForm {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid #e1e8ee;
+    background-color: #fff;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.centerForm h1 {
+    font-size: 26px;
+    font-family: "RobotoLight";
+    font-weight: 100;
+    color: #86939e;
+    margin-top: 0px;
+}
+
+.centerForm .field {
+    padding-bottom: 20px;
+}
+.centerForm .field input {
+    height: 45px;
+}
+.centerForm .formBtn {
+    text-align: center;
+    padding-top: 15px;
+}
+.centerForm .field .formBtn .btn {
+    width: 150px;
+    height: 45px;
+    margin: 0px auto;
+    display: block;
+} 
+.resetPass form {
+    margin-top: 30px;
+}

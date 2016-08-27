@@ -1,0 +1,184 @@
+.clearAfter:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #dab368;
+}
+
+.active {
+    background-color: #dab368;
+}
+
+li.go-to-home {
+    font-weight: bold;
+    float: right;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background: #e6e6e6;
+}
+.main {
+    background: #fff;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 2px;
+    box-shadow: 0 0 13px 0 #dab368;
+}
+.main .title {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.main .info {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Accordern Start*/
+.accordion {
+    margin-bottom: 15px;
+}
+.accContent {
+    display: none;
+    padding-top: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.accContent tbody tr:nth-child(even) {
+    /*background-color: rgb(244, 244, 244);*/
+}
+.accHeader {
+    padding: 15px;
+    background: rgb(87, 87, 87);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.accIcon {
+    float: left;
+    margin-right: 5px;
+}
+.accIcon i {
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    vertical-align: bottom;
+}
+.accHeader h3 {
+    font-size: 17px;
+    color: #fff;
+    float: left;
+    min-width: 170px;
+}
+.accHeader h3 + .explainTxt {
+    float: right;
+    text-align: right;
+    line-height: 24px;
+    color: #C2C2C2;
+    margin-bottom: 0;
+}
+.accOpen  {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+.accOpen h3, .accOpen .accRigh {
+    color: #000;
+}
+.accRigh {
+    float: right;
+    color: #fff;
+    font-style: italic;
+}
+/* Accordeon End */
+
+/* Field set Start */
+.field input, .field textarea {
+    width: 100%;
+    border: 1px solid #deb368;
+    border-radius: 2px;
+    height: 45px;
+    padding: 0px 15px;
+    transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    margin-top: 10px;
+}
+.field select {
+    width: 100%;
+    border-radius: 2px;
+    height: 45px;
+    padding: 0px 15px;
+    margin-top: 10px;
+}
+.field input:focus, .field textarea:focus{
+    border: 1px solid #dab368;
+}
+.btn {
+    margin-top: 10px;
+    height: 45px;
+    padding: 0px 27px;
+    border: 0px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+}
+.formBtn {
+    text-align: center;
+}
+.brownBtn {
+    background-color: #dab368;
+}
+/* Field set End */
+
+.addCategory {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+.alert-success {
+    position: fixed;
+    padding: 15px;
+    top: 15px;
+    right: 15px;
+    background: rgb(222, 179, 104);
+    border-radius: 2px;
+}
