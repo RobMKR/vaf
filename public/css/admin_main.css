@@ -4,7 +4,7 @@
     clear: both;
 }
 
-ul {
+.header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,16 +12,16 @@ ul {
     background-color: #333;
 }
 
-li {
+.header li {
     float: left;
     border-right:1px solid #bbb;
 }
 
-li:last-child {
+.header li:last-child {
     border-right: none;
 }
 
-li a {
+.header li a {
     display: block;
     color: white;
     text-align: center;
@@ -29,7 +29,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.header li a:hover:not(.active) {
     color: #dab368;
 }
 
@@ -37,7 +37,7 @@ li a:hover:not(.active) {
     background-color: #dab368;
 }
 
-li.go-to-home {
+.header li.go-to-home {
     font-weight: bold;
     float: right;
 }
@@ -169,7 +169,7 @@ body {
 }
 /* Field set End */
 
-.addCategory {
+.addCategory , .addPictures {
     width: 50%;
     text-align: center;
     margin: 0 auto;
@@ -182,3 +182,26 @@ body {
     background: rgb(222, 179, 104);
     border-radius: 2px;
 }
+
+/* Crop Styles Start */
+.cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+.image-editor input {
+    margin-bottom: 10px;
+}
+.cropit-preview-image-container {
+    cursor: move;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+/* Crop Styles End */

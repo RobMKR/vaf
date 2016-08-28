@@ -23,7 +23,7 @@ class Admin
     }
     
     public static function isLoggedIn(){
-        if(Session::has('user_id') && Session::get('user_id') ===  md5('vafadmin')){
+        if(Session::has('user_id') && Session::get('user_id') ===  md5(config('constants.username'))){
             return true;
         }
         return false;

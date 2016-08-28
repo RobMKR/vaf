@@ -4,9 +4,10 @@
         {!! HTML::style('css/reset.css') !!}
         {!! HTML::style('css/admin_main.css') !!}
         {!! HTML::style('css/jquery.mCustomScrollbar.min.css') !!}
-        {!! HTML::script('js/jquery-3.1.0.min.js') !!}
+        {!! HTML::script('js/jquery-2.0.0.min.js') !!}
         {!! HTML::script('js/admin.js') !!}
         {!! HTML::script('js/jquery.mCustomScrollbar.min.js') !!}
+        @yield('css_js')
         
     </head>
     <body>
@@ -22,7 +23,7 @@
                 <li><a class="{{ (Request::is('admin/addCategory') ? 'active' : '') }}" href="{{ url('admin/addCategory') }}">Add Category</a></li>
                 <li><a class="{{ (Request::is('admin/addPicture') ? 'active' : '') }}" href="{{ url('admin/addPicture') }}">Add Picture</a></li>
                 <li><a class="{{ (Request::is('admin/lastUpdates') ? 'active' : '') }}" href="{{ url('admin/lastUpdates') }}">Last Updates</a></li>
-                <li class="go-to-home"><a href="{{ url('/') }}">Go To Website</a></li>
+                <li class="go-to-home"><a href="{{ url('/admin/goHome') }}">Go To Website</a></li>
             </ul>
         </div>
 
@@ -33,5 +34,6 @@
                 @yield('main')
             </div>
         </div>
+        @yield('end_script')
     </body>
 </html>

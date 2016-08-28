@@ -19,6 +19,22 @@ class Category extends Model
      *
      * @var array
      */
-    protected $fillable = ['name', 'type', 'created'];
-
+    protected $fillable = ['name', 'type'];
+    
+    public function picture(){
+        return $this->hasOne('App\Picture');
+    }
+    
+    public function getByType(){
+        $data['rooms'] = $this->where('type', '=', 'room')->get();
+        $data['piece'] = $this->where('type', '=', 'piece')->get();
+        foreach($data['rooms'] as $_rooms){
+            $return['Rooms Furniture'][$_rooms->id] =$_rooms->name;
+        }
+        foreach($data['piece'] as $_piece){
+            $return['Pieces Furniture'][$_piece->id] = $_piece->name;
+        }
+        return $return;
+    }
+    
 }

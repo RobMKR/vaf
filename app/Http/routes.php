@@ -22,6 +22,9 @@ Route::group(['middleware' => ['admin']], function () {
     Route::get('/admin/addCategory', 'AdminController@addCategory');
     Route::post('/admin/addCategory', 'AdminController@addCategory');
     Route::get('/admin/addPicture', 'AdminController@addPicture');
+    Route::post('/admin/addPicture', 'AdminController@addPicture');
     Route::get('/admin/lastUpdates', 'AdminController@lastUpdates');
+    Route::get('/admin/goHome', 'AdminController@goHome');
+    
     
 });

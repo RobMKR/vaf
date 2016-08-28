@@ -4,8 +4,8 @@
 
 @section('main')
     @parent
-    @section('main_title', 'Admin Panel - Add Picture')
-    @section('main_info', 'Select Category and add picture in it')
+    @section('main_title', 'Admin Panel - Add Category')
+    @section('main_info', 'Select Global Category and add Sub-category in it')
     
     <div class="addCategory">
         @if (count($errors) > 0)
